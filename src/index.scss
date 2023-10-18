@@ -1,0 +1,269 @@
+@import  'reset.scss';
+
+@font-face {
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/text-regular.woff') format('woff');
+}
+
+@font-face {
+ font-family: "YS Text";
+ font-style: normal;
+ font-weight: 500;
+ src: url('./assets/fonts/text-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: "YS Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/text-black.woff') format('woff');
+}
+
+
+.header {
+  width: 1100px;
+  height: 716px;
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('./assets/content-image/image1.png');
+  background-repeat: no-repeat;
+  background-position: right bottom 70px;
+
+  &__logo {
+    height: 2rem;
+  }
+
+  &__heading {
+    max-width: 420px;
+    margin-top: 72px;
+    height: 196px;
+    color: #21201F;
+    font-family: "YS Text", sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+}
+
+&__inner-wrapper {
+  width: 420px;
+}
+
+&__text {
+  margin-top: 48px;
+  color: #21201F;
+  font-family: YS Text, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+&__new-price {
+  position: relative;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  width: 79px;
+  height: 33px;
+  border-radius: 500px;
+  background: radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%); 
+}
+
+&__new-price-text {
+  color: #2E2C21;
+  font-family: YS Text, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+&__old-price {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 11px 12px;
+  width: 115px;
+  height: 33px;
+  border-radius: 500px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.63) 0%, rgba(255, 255, 255, 0.63) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+}
+
+&__old-price-text {
+  position: absolute;
+  color: #808080;
+  font-family: YS Text, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+&__old-price::after {
+  position: relative;
+  bottom: 5px;
+  width: 46px;
+  content: url('./assets/icons/Vector\ 253.svg');
+}
+
+&__price-wrapper {
+  display: flex;
+  position: relative;
+  bottom: 30px;
+  left: 100px;
+}
+
+&__button {
+  width: 318px;
+  height: 65px;
+  text-align: center;
+  color: #21201F;
+  font-family: YS Text, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  border-radius: 36px;
+  background: #FFDE40;
+  box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+}
+
+
+&__image {
+  position: absolute;
+  top: 3px;
+  left: 370px;
+  width: 744px;
+  height: 618px;
+}
+
+}
+
+main {
+  width: 1100px;
+  height: calc(100vh - 716px);
+  margin: auto;
+}
+
+.advantages {
+
+  &__heading {
+    max-width: 620px;
+    height: 96px;
+    color: #21201F;
+    font-family: YS Text, sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -1.12px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+
+  &__item {
+    flex-basis: 50%;
+  }
+
+  &__item:nth-child(3){
+     margin-top: 61px;
+  }
+  
+  &__item:last-child {
+    margin-top: 61px;
+  }
+
+
+
+  &__text {
+    color: #21201F;
+    font-family: YS Text;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__text-left {
+    width: 310px;
+  }
+
+  &__text-right {
+    width: 360px;
+  }
+
+  
+}
+
+.events {
+  &__heading {
+    margin-top: 128px;
+    max-width: 600px;
+    color: #21201F;
+    font-family: YS Text;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+  }
+
+  &__text {
+    margin-top: 48px;
+    max-width: 364px;
+    color: #21201F;
+    font-family: YS Text;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__frame-first {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+  }
+
+  &__image-first {
+    position: relative;
+    bottom: 15px;
+    right: 710px;
+  }
+
+  &__frame-second {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+  }
+
+  &__image-second {
+    position: relative;
+    bottom: 240px;
+    right: 250px;
+  }
+
+  &__frame-third {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+  }
+
+  &__frame-fourth {
+    width: 456px;
+    height: 456px;
+    border-radius: 64px;
+  }
+
+  &__image-third {
+     position: relative;
+     top: 370px;
+     right: 355px;
+  }
+}
