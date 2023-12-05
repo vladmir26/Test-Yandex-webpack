@@ -165,23 +165,12 @@ main {
   }
 
   &__list {
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 48px;
+    gap: 61px;
   }
-
-  &__item {
-    flex-basis: 50%;
-  }
-
-  &__item:nth-child(3){
-     margin-top: 61px;
-  }
-  
-  &__item:last-child {
-    margin-top: 61px;
-  }
-
 
 
   &__text {
@@ -193,14 +182,22 @@ main {
   }
 
   &__text-left {
-    width: 310px;
+    width: 362px;
   }
 
   &__text-right {
-    width: 360px;
+    width: 400px;
   }
 
   
+}
+
+@media screen and (max-width: 480px) {
+  .advantages {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .events {
